@@ -20,7 +20,6 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.2.4",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
     "file-loader": "^6.2.0"
