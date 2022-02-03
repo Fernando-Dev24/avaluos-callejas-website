@@ -4,13 +4,22 @@ import favicon from '../assets/icons/favicon.svg';
 
 const Layout = ({ children }) => {
    return (
-      <>
+      <main>
          <Head>
-            <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta
+               httpEquiv="Content-Type"
+               content="text/html;charset=UTF-8"
+               key="charset"
+            />
+            <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+               key="viewport"
+            />
             <meta
                name="description"
-               content="Centro de avalúos de vehículos y maquinaria pesada. Antes de comprar, o vender un vehículo, conozca el precio justo y actual teniendo en cuenta, hasta el más minímo detalle del mismo."
+               content="Avaluós Callejas - Centro de avalúos de vehículos, maquinaria, con diagnóstico mecánico y estético, estético, pruebas completas a batería, motor, etc."
+               key="description"
             />
             <link
                rel="shortcut icon"
@@ -18,10 +27,10 @@ const Layout = ({ children }) => {
                sizes="32x32"
                type="image/x-icon"
             />
-            <title>Avalúos Callejas & Asociados</title>
+            <title>Avalúos Callejas & Asociados | Centro de avalúos, El Salvador</title>
          </Head>
          { children }
-      </>
+      </main>
    );
 }
  
