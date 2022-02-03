@@ -313,7 +313,7 @@
                   transition: all .3s ease;
                   visibility: hidden;
                   opacity: 0;
-                  .control-label { font-size: 12px; }
+                  .control-label { font-size: 0.625rem; /* 12px */ }
                   .btn--pdf-control {
                      width: 2.5rem; /* 30px */
                      height: 2.5rem; /* 30px */

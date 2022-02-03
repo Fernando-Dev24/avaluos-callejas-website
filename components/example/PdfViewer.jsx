@@ -104,7 +104,7 @@ const PdfViewer = ({ setIsTargetPdf, setSlideTitle, setSlideContent }) => {
                         onClick={ handleChangePage }>
                         <FiChevronLeft className='btn--icon' />
                      </button>
-                     <span className='control--label'>
+                     <span className='control-label'>
                         { pageNumber } de { numPages }
                      </span>
                      <button
