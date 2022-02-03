@@ -1,5 +1,6 @@
 /* next */
 import Link from "next/link";
+import Image from "next/image";
 /* react */
 import { useState, useEffect } from 'react';
 /* third-party libraries */
@@ -9,6 +10,7 @@ import { FaFacebookSquare, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi';
 /* assets */
 import { links } from '../../public/data';
+import logo from '../../assets/icons/logo.svg';
 
 /* variants */
 const navbarMobile = {
@@ -34,6 +36,12 @@ const Header = () => {
                <Link
                   href="/">
                   <a className="title-link">
+                     <Image
+                        src={ logo.src }
+                        alt="Avalúos Callejas logotipo"
+                        width={ logo.width }
+                        height={ logo.height }>
+                     </Image>
                      <h1>Avalúos Callejas & Asociados</h1>
                   </a>
                </Link>

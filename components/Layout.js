@@ -1,4 +1,6 @@
 import Head from "next/head";
+/* assets */
+import favicon from '../assets/icons/favicon.svg';
 
 const Layout = ({ children }) => {
    return (
@@ -9,6 +11,12 @@ const Layout = ({ children }) => {
             <meta
                name="description"
                content="Centro de avalúos de vehículos y maquinaria pesada. Antes de comprar, o vender un vehículo, conozca el precio justo y actual teniendo en cuenta, hasta el más minímo detalle del mismo."
+            />
+            <link
+               rel="shortcut icon"
+               href={ favicon.src }
+               sizes="32x32"
+               type="image/x-icon"
             />
             <title>Avalúos Callejas & Asociados</title>
          </Head>
