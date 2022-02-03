@@ -20,8 +20,8 @@ const Footer = () => {
          <section className="footer__content container">
             <article className="footer__disclaimer">
                <h4>Avalúos Callejas & Asociados</h4>
-               <p>Todas las imagénes que se muestran en este sitio han sido extraídas de sitios, o plataformas confiables y de libre uso. Así mismo, toda la información aquí presentada es propiedad de Avalúos Callejas's & Asociados.</p>
-               <p>Avalúos Calleja's & Asociados { new Date().getFullYear() } | Todos los derechos reservados</p>
+               <p>Todas las imagénes que se muestran en este sitio han sido extraídas de sitios, o plataformas confiables y de libre uso. Así mismo, toda la información aquí presentada es propiedad de Avalúos Callejas & Asociados.</p>
+               <p>Avalúos Callejas & Asociados { new Date().getFullYear() } | Todos los derechos reservados</p>
             </article>
             <article className="footer__links">
                <h4>Enlaces que podría interesarte</h4>

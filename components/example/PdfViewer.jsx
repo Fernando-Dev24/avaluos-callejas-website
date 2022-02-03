@@ -48,7 +48,7 @@ const PdfViewer = ({ setIsTargetPdf, setSlideTitle, setSlideContent }) => {
             pdfControls.forEach((button) => button.classList.remove('disable'));
          }
       };
-   }, [pageNumber, numPages, windowWidth]);
+   }, [pageNumber, numPages, windowWidth, isPdfRendered]);
    
    return (
       <>

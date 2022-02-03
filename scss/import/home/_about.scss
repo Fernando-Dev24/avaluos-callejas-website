@@ -23,15 +23,17 @@
          border-radius: 5px;
          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
          background: $alternate;
-         img {
-            width: 4.6875rem !important; /* 75px */
-            height: auto !important;
-            display: block;
-            margin: 0.625rem auto;
-         }
-         h3 {
-            font-size: 1.25rem; /* 20px */
-            text-align: center;
+         .company__content {
+            img {
+               width: 50% !important; /* 75px */
+               height: auto !important;
+               display: block;
+               margin: 0.625rem auto;
+            }
+            h3 {
+               font-size: 1.25rem; /* 20px */
+               text-align: center;
+            }
          }
       }
    }
@@ -55,6 +57,15 @@
       }
       .allied-companies__grid {
          grid-template-columns: 1fr;
+         .company {
+            justify-content: center;
+            .company__content {
+               .company__image {
+                  display: flex;
+                  justify-content: center;
+               }
+            }
+         }
       }
    }
 }
