@@ -21,18 +21,6 @@
          font-weight: 600;
          text-decoration: none;
          color: #FFF;
-         &.title-link {
-            display: flex;
-            align-items: center;
-            img {
-               width: 6.25rem !important;
-               height: auto !important;
-            }
-            h1 {
-               font-size: 1rem; /* 16px */
-               margin-left: 1.25rem; /* 20px */
-            }
-         }
          &:first-child {
             transition: all .3s ease;
             &:hover {
