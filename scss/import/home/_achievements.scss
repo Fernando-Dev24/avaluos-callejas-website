@@ -1,0 +1,86 @@
+.achievements {
+   width: 100%;
+   margin-bottom: 9.375rem; /* 150px */
+   .achievements__banner {
+      position: relative;
+      width: 100%;
+      height: 30vh;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1.875rem; /* 1.875rem */
+      background: url(../../../assets/images/achievements-bg.webp) no-repeat center;
+      background-size: cover;
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 30vh;
+         background: rgba($color: $secondary, $alpha: .5);
+      }
+      h3 {
+         font-size: 3.125rem; /* 50px */
+         color: #FFF;
+         z-index: 1;
+      }
+   }
+   .achievements__content {
+      & > p { color: $secondary; margin-bottom: 1.25rem; /* 20px */ }
+      .achievements__grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 1.25rem; /* 20px */
+         .achievement__card {
+            display: grid;
+            place-items: center;
+            padding: 2.5rem; /* 40px */
+            border-radius: 5px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            background: $primary;
+            p {
+               text-align: center;
+               font-size: 1.25rem; /* 20px */
+               font-weight: 600;
+               color: #FFF;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .achievements {
+      margin-bottom: 25rem; /* 400px */
+      .achievements__banner {
+         h3 {
+            font-size: 2.1875rem; /* 35px */
+         }
+      }
+      .achievements__content {
+         .achievements__grid {
+            grid-template-columns: 1fr;
+            .achievement__card {
+               padding: 1.875rem; /* 30px */
+               font-size: 1rem; /* 16px */
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .achievements {
+      .achievements__banner {
+         h3 { font-size: 1.875rem; /* 25px */ }
+      }
+      .achievement__content {
+         & > p {
+            font-size: 0.875rem; /* 14px */
+         }
+         .achievements__grid {
+            .achievement__card {
+               p { font-size: 0.875rem /* 14px */ }
+            }
+         }
+      }
+   }
+}

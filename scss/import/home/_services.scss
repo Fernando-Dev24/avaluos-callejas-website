@@ -1,0 +1,92 @@
+.services {
+   width: 100%;
+   margin-bottom: 6.25rem; /* 100px */
+   .services__grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-areas:
+      "sv-1 sv-1 sv-1 sv-1 sv-1 sv-1 sv-1 sv-1 sv-4 sv-4"
+      "sv-2 sv-2 sv-2 sv-3 sv-3 sv-3 sv-3 sv-3 sv-4 sv-4"
+      "sv-6 sv-6 sv-6 sv-6 sv-7 sv-7 sv-7 sv-7 sv-5 sv-5"
+      "sv-8 sv-8 sv-8 sv-8 sv-8 sv-8 sv-9 sv-9 sv-9 sv-9";
+      gap: 10px; /* 10px */
+      .service {
+         width: 100%;
+         max-width: 100%;
+         padding: 1.875rem; /* 30px */
+         border: 1px solid $primary;
+         transition: all .3s ease;
+         &.active {
+            background: $primary;
+            span { color: #FFF; }
+            h4, p { color: #FFF; }
+         }
+         span {
+            font-size: 3.75rem; /* 60px */
+            font-weight: 800;
+            color: $primary;
+         }
+         h4 {
+            margin-bottom: 0.625rem; /* 10px */
+            font-size: 1.5625rem; /* 25px */
+            color: $primary;
+         }
+         p {
+            font-weight: 300;
+            color: $secondary;
+         }
+         span, h4, p { pointer-events: none; }
+      }
+      .service:first-child { grid-area: sv-1; }
+      .service:nth-child(2) { grid-area: sv-2; }
+      .service:nth-child(3) { grid-area: sv-3; }
+      .service:nth-child(4) { grid-area: sv-4; }
+      .service:nth-child(5) { grid-area: sv-5; }
+      .service:nth-child(6) { grid-area: sv-6; }
+      .service:nth-child(7) { grid-area: sv-7; }
+      .service:nth-child(8) { grid-area: sv-8; }
+      .service:nth-child(9) { grid-area: sv-9; }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .services {
+      width: 100%;
+      .services__grid {
+         grid-template-columns: 1fr;
+         grid-template-areas: none;
+         .service:first-child { grid-area: initial; }
+         .service:nth-child(2) { grid-area: initial; }
+         .service:nth-child(3) { grid-area: initial; }
+         .service:nth-child(4) { grid-area: initial; }
+         .service:nth-child(5) { grid-area: initial; }
+         .service:nth-child(6) { grid-area: initial; }
+         .service:nth-child(7) { grid-area: initial; }
+         .service:nth-child(8) { grid-area: initial; }
+         .service:nth-child(9) { grid-area: initial; }
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .services {
+      width: 100%;
+      h3 {
+         font-size: 1rem; /* 16px */
+         &::after {
+            display: none;
+         }
+      }
+      .services__grid {
+         .service {
+            padding: 1.25rem; /* 20px */
+            span { font-size: 2.5rem; /* 40px */ }
+            h4 { font-size: 1.25rem; /* 20px */ }
+            span, h4, p {
+               pointer-events: none;
+            }
+         }
+      }
+   }
+}

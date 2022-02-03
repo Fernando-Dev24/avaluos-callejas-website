@@ -1,0 +1,373 @@
+.process__carrousel {
+   width: 100%;
+   margin-bottom: 3.125rem; /* 50px */
+   .carrousel__controls {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 1.875rem; /* 30px */
+      .btn--control {
+         display: flex;
+         align-items: center;
+         margin-right: 1.25rem; /* 20px */
+         padding-bottom: 0.3125rem; /* 5px */
+         white-space: nowrap;
+         font-size: 0.875rem; /* 14px */
+         font-weight: 400;
+         border-bottom: 1px solid rgba($color: $secondary, $alpha: .3);
+         color: $secondary;
+         background: transparent;
+         transition: all .3s ease;
+         cursor: pointer;
+         .btn--icon {
+            margin-right: 0.625rem; /* 10px */
+            font-size: 1rem; /* 16px */
+            color: rgba($color: $secondary, $alpha: .8);
+         }
+         &.active {
+            color: $primary;
+            border-color: $primary;
+            .btn--icon { color: $primary; }
+         }
+         &:hover {
+            color: $primary;
+            border-color: $primary;
+            .btn--icon { color: $primary; }
+         }
+      }
+   }
+   .carrousel__slide {
+      h4 {
+         margin-bottom: 0.625rem; /* 10px */
+         font-size: 1.25rem; /* 25px */
+         color: $primary;
+      }
+      p {
+         font-size: 1rem; /* 16px */
+         line-height: 1.6875rem; /* 27px */
+         color: $secondary;
+      }
+      .photos__grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 1.25rem; /* 20px */
+         .photo {
+            width: 100%;
+            img {
+               width: 100%;
+               border-radius: 5px;
+            }
+         }
+         .shadow__modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: rgba($color: $secondary, $alpha: .7);
+            z-index: 100;
+            .zoom__modal {
+               position: relative;
+               width: 80%;
+               .zoom-image {
+                  width: 100%;
+                  border-radius: 5px;
+               }
+               .btn--close-modal {
+                  position: absolute;
+                  top: 3.125rem; /* 50px */
+                  right: 3.125rem; /* 50px */
+                  display: grid;
+                  place-items: center;
+                  border-radius: 3px;
+                  background: transparent;
+                  cursor: pointer;
+                  .btn--icon {
+                     font-size: 2.1875rem; /* 30px */
+                     color: #FFF;
+                     pointer-events: none;
+                     transition: all .3s ease;
+                  }
+                  &:hover .btn--icon { color: $primary; }
+               }
+            }
+         }
+      }
+      .pdf__viewer {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         .pdf__document {
+            position: relative;
+            width: auto;
+            padding: 1.25rem; /* 20px */
+            border-radius: 10px;
+            box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            background: #FFF;
+            transition: all .3s ease;
+            user-select: none;
+            .pdf__controls {
+               position: absolute;
+               top: 1.875rem; /* 20px */
+               left: 50%; /* 20px */
+               transform: translateX(-50%);
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               border-radius: 5px;
+               box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+               background: #FFF;
+               opacity: 0;
+               transition: all .3s ease;
+               .control-label {
+                  font-size: 0.875rem; /* 14px */
+                  color: $secondary;
+               }
+               .btn--pdf-control {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 2.5rem; /* 40px */
+                  height: 2.5rem; /* 40px */
+                  background: transparent;
+                  transition: all .3s ease;
+                  cursor: pointer;
+                  &:first-child {
+                     margin-right: 1.25rem; /* 20px */
+                     border-radius: 5px 0 0 5px;
+                  }
+                  &:last-child {
+                     margin-left: 1.25rem; /* 20px */
+                     border-radius: 0 5px 5px 0;
+                  }
+                  &:hover {
+                     background: $primary;
+                     .btn--icon { color: #FFF; }
+                  }
+                  &.disable {
+                     opacity: .3;
+                     background: transparent;
+                     cursor: not-allowed;
+                     pointer-events: none;
+                     .btn--icon { color: $secondary; }
+                  }
+                  .btn--icon {
+                     font-size: 1rem; /* 16px */
+                     color: $secondary;
+                     pointer-events: none;
+                  }
+               }
+            }
+            &:hover .pdf__controls { opacity: 1; }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .process__carrousel {
+      .carrousel__controls {
+         width: 100%;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 1.25rem; /* 20px */
+         .btn--control {
+            .btn--icon {
+               pointer-events: none;
+            }
+         }
+      }
+      .carrousel__slide {
+         .photos__grid {
+            .shadow__modal {
+               .zoom__modal {
+                  .btn--close-modal {
+                     top: 1.875rem; /* 30px */
+                     right: 1.875rem; /* 30px */
+                     padding: 0.625rem; /* 10px */
+                     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+                     background: #FFF;
+                     .btn--icon {
+                        font-size: 1.25rem; /* 25px */
+                        color: $primary
+                     };
+                  }
+               }
+            }
+         }
+         .pdf__viewer {
+            .pdf__document {
+               padding: 0.625rem; /* 10px */
+               .pdf__controls {
+                  top: 1.25rem; /* 20px */
+                  left: 1.25rem; /* 20px */
+                  transform: translateX(0);
+                  opacity: 1;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .process__carrousel {
+      width: 100%;
+      .carrousel--controls-mobile {
+         position: relative;
+         width: 100%;
+         margin-bottom: 1.875rem; /* 30px */
+         .carrousel__selected {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.625rem; /* 10px */
+            padding: 10px 20px;
+            border-radius: 3px;
+            background: $primary;
+            cursor: pointer;
+            span {
+               font-size: 1rem; /* 14px */
+               font-weight: 500;
+               color: #FFF;
+            }
+            .label--icon {
+               font-size: 1.125rem; /* 18px */
+               color: #FFF;
+            }
+         }
+         .navbar__buttons {
+            position: absolute;
+            width: 100%;
+            padding: 1.25rem; /* 10px 20px */
+            border-radius: 5px;
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            background: #FFF;
+            z-index: 10;
+            .btn--control {
+               width: 100%;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               margin-bottom: 10px; /* 10px */
+               padding: 0.625rem 1.25rem; /* 10px 20px */
+               border-radius: 3px;
+               font-size: 0.875rem; /* 14px */
+               color: $secondary;
+               background: $alternate;
+               cursor: pointer;
+               .btn--icon { color: $primary; font-size: 1rem; /* 16px */ }
+            }
+         }
+      }
+      .carrousel__slide {
+         h4 { font-size: 1.125rem; /* 18px */ }
+         p { font-size: 0.875rem; /* 14px */ }
+         .photos__grid {
+            grid-template-columns: 1fr;
+            .photo:hover { cursor: pointer; }
+            .shadow__modal {
+               .zoom__modal {
+                  width: 90%;
+               }
+            }
+         }
+         .pdf-viewer-shadow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: rgba($color: $secondary, $alpha: .7);
+            .pdf-viewer-mobile {
+               position: relative;
+               width: 90%;
+               box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+               background: #FFF;
+               &:hover .pdf-controls--mobile, &:hover .btn--close-modal {
+                  visibility: visible;
+                  opacity: 1;
+               }
+               .pdf-page {
+                  margin: 0;
+                  canvas {
+                     width: 100% !important;
+                     height: auto !important;
+                  }
+               }
+               .pdf-controls--mobile {
+                  position: absolute;
+                  bottom: 1.25rem; /* 20px */
+                  left: 50%;
+                  transform: translateX(-50%);
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+                  background: #FFF;
+                  transition: all .3s ease;
+                  visibility: hidden;
+                  opacity: 0;
+                  .control-label { font-size: 12px; }
+                  .btn--pdf-control {
+                     width: 2.5rem; /* 30px */
+                     height: 2.5rem; /* 30px */
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     background: #FFF;
+                     transition: all .3s ease;
+                     cursor: pointer;
+                     &:first-child {
+                        margin-right: 1.25rem; /* 20px */
+                        border-radius: 5px 0 0 5px;
+                     }
+                     &:last-child {
+                        margin-left: 1.25rem; /* 20px */
+                        border-radius: 0 5px 5px 0;
+                     }
+                     &.disable {
+                        opacity: .5;
+                        background: transparent;
+                        cursor: not-allowed;
+                        pointer-events: none;
+                        .btn--icon { color: $secondary; }
+                     }
+                     &:hover {
+                        background: rgba($color: $secondary, $alpha: .3);
+                        .btn--icon { color: #FFF; }
+                     }
+                     .btn--icon {
+                        font-size: 1rem; /* 16px */
+                        color: $secondary;
+                        pointer-events: none;
+                     }
+                  }
+               }
+               .btn--close-modal {
+                  position: absolute;
+                  top: 1.25rem; /* 20px */
+                  right: 1.25rem; /* 20px */
+                  display: grid;
+                  place-items: center;
+                  padding: 0.3125rem; /* 5px */
+                  border-radius: 3px;
+                  background: $primary;
+                  visibility: hidden;
+                  opacity: 0;
+                  transition: all .3s ease;
+                  .btn--icon {
+                     font-size: 1rem; /* 16px */
+                     color: #FFF;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

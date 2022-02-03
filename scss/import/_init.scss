@@ -1,0 +1,71 @@
+/* variables */
+$primary: #BA0B27;
+$secondary: #171717;
+$alternate: #F2F2F2;
+/* social media colors */
+$facebook: #4267B2;
+$whatsapp: #25D366;
+
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-display: swap;
+   font-size: 1rem; /* 16px */
+   background: #FFF;
+   img {
+      vertical-align: top;
+   }
+}
+
+.container {
+   width: 90%;
+   max-width: 90%;
+   margin: 0 auto;
+}
+
+.btn {
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1rem; /* 16px */
+}
+
+.title-line {
+   width: max-content;
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.625rem; /* 10px */
+   font-size: 1.875rem; /* 40px */
+   color: $primary;
+   &:after {
+      content: "";
+      position: relative;
+      right: 0%;
+      width: 75px;
+      height: 2px;
+      margin-left: 0.625rem; /* 10px */
+      background: $primary;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   body {
+      font-size: 0.875rem; /* 14px */
+   }
+
+   .title-line {
+      font-size: 1.5625rem; /* 25px */
+      &::after {
+         width: 50px;
+      }
+   }
+}

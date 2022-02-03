@@ -1,0 +1,113 @@
+.vehicle__example {
+   position: relative;
+   width: 100%;
+   margin: 4.375rem auto 6.25rem; /* 70px auto 100px */
+   padding: 3.125rem; /* 50px */
+   border-radius: 10px;
+   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+   background: $alternate;
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: -1.25rem; /* 20px */
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid $alternate;
+      border-radius: 20px;
+   }
+   .example__intro {
+      margin-bottom: 1.25rem; /* 20px */
+      span {
+         display: block;
+         margin-bottom: 10px; /* 10px */
+         font-size: 0.875rem; /* 14px */
+         color: rgba($color: $secondary, $alpha: .7);
+      }
+      h2 {
+         font-size: 2.5rem; /* 40px */
+         font-weight: 600;
+         color: $primary;
+      }
+      p {
+         font-size: 1.25rem; /* 20px */
+         font-weight: 300;
+      }
+   }
+   .example__details {
+      width: 100%;
+      .detail__container {
+         width: 100%;
+         margin-bottom: 0.625rem; /* 10px */
+         p {
+            .detail__title {
+               font-weight: 500;
+               color: $primary;   
+            }
+            font-weight: 300;
+         }
+      }
+   }
+}
+
+.process__content {
+   .process__intro {
+      width: 100%;
+      margin-bottom: 3.125rem; /* 30px */
+      h2 {
+         margin-bottom: 0.625rem; /* 10px */
+         font-size: 1.875rem; /* 30px */
+      }
+      p {
+         font-weight: 300;
+         line-height: 1.6875rem; /* 27px */
+         color: $secondary;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .vehicle__example {
+      margin-top: 2.5rem; /* 40px */
+      .example__intro {
+         h2 {
+            font-size: 2.1875rem; /* 30px */
+         }
+         p {
+            font-size: 1rem; /* 16px */
+         }
+      }
+      .example__details {
+         .detail__container {
+            font-size: 1rem; /* 16px */
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .vehicle__example {
+      padding: 1.875rem; /* 30px */
+      .example__intro {
+         span { font-size: 0.75rem; /* 12px */ }
+         h2 { font-size: 1.5625rem; /* 25px */ }
+         p { font-size: 0.875rem; /* 14px */ }
+      }
+      .example__details {
+         .detail__container {
+            p {
+               font-size: 0.875rem; /* 14px */
+               line-height: 1.6875rem; /* 27px */
+            }
+         }
+      }
+   }
+
+   .process__content {
+      .process__intro {
+         h2 { font-size: 1.5625rem; /* 25px */ }
+      }
+   }
+}

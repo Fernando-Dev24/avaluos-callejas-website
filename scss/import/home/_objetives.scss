@@ -1,0 +1,89 @@
+.objetives {
+   width: 100%;
+   margin-bottom: 6.25rem; /* 100px */
+   background: $alternate;
+   .objetives__content {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      place-items: center;
+      padding: 3.75rem 0; /* 60px 0 */
+      .objetives__slider {
+         position: relative;
+         padding: 3.125rem; /* 50px */
+         .slide {
+            p {
+               width: 100%;
+               font-size: 1rem; /* 16px */
+               font-weight: 300;
+               line-height: 1.6875rem; /* 27px */
+            }
+         }
+         .slider__controls {
+            position: absolute;
+            bottom: -1.875rem; /* -30px */
+            right: 0;
+            display: flex;
+            .btn--slider {
+               width: max-content;
+               display: grid;
+               place-items: center;
+               margin-right: 1.25rem; /* 20px */
+               padding: 0.625rem 1.25rem; /* 10px 20px */
+               font-size: 0.875rem; /* 14px */
+               border: 1px solid $primary;
+               border-radius: 3px;
+               color: $secondary;
+               background: transparent;
+               transition: all .3s ease;
+               cursor: pointer;
+               &:hover { background: $primary; color: #FFF; }
+               &.active { background: $primary; color: #FFF; }
+            }
+         }
+      }
+      .objetives__illustration {
+         position: relative;
+         img {
+            position: relative;
+            width: 100% !important;
+            height: auto !important;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .objetives {
+      width: 100%;
+      .objetives__content {
+         grid-template-columns: 1fr;
+         .objetives__slider {
+            order: 1;
+            .slider__controls {
+               right: 50%;
+               transform: translateX(50%);
+               .btn--slider {
+                  width: max-content; /* 20px */
+                  font-size: 12px; /* 12px */
+                  &:last-child { margin: 0; }
+               }
+            }
+         }
+         .objetives__illustration { display: none; }
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .objetives {
+      width: 100%;
+      .objetives__content {
+         .objetives__slider {
+            .slide {
+               h3 { font-size: 1.25rem; /* 20px */ }
+               p { font-size: 14px; }
+            }
+         }
+      }
+   }
+}

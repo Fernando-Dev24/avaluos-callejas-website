@@ -1,0 +1,60 @@
+.about__us {
+   width: 100%;
+   margin: 6.25rem auto; /* 100px */
+   .about__us-info {
+      .about {
+         margin-bottom: 1.25rem; /* 20px */
+         font-size: 1rem; /* 16px */
+         font-weight: 300;
+         line-height: 1.6875rem; /* 27px */
+         .company-name { color: $primary; }
+      }
+   }
+   .allied-companies__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem; /* 20px */
+      .company {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 2.5rem; /* 40px */
+         border-radius: 5px;
+         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+         background: $alternate;
+         img {
+            width: 4.6875rem !important; /* 75px */
+            height: auto !important;
+            display: block;
+            margin: 0.625rem auto;
+         }
+         h3 {
+            font-size: 1.25rem; /* 20px */
+            text-align: center;
+         }
+      }
+   }
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+   .about__us {
+      .allied-companies__grid{ 
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .about__us {
+      .about__us-info {
+         .about {
+            font-size: 0.875rem; /* 14px */
+         }
+      }
+      .allied-companies__grid {
+         grid-template-columns: 1fr;
+      }
+   }
+}
