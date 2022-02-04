@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Avalúos Callejas & Asociados
+***
+<p>
+   Avalúos Calleja´s & Asociados is a twenty years’ experience to value your vehicle. Here you could know how many your vehicle cost on commercial car’s world and how many an agency will give you for it. On website you will find out a modern design and full explanation about our services and what companies are supporting us right now.
+   
+   Moreover, you could watch to our process to make the value of your car happen. At the end of it, you are going to see a copy of our document with all the explanation from your car and its commercial value right now. We hope you like our services and welcome, dear customer.
+</p>
 
-## Getting Started
+## Technologies
+<p>
+   This website was created using NextJS library to make a modern and simple design that targets all capabilities an end user will need. Moreover, with the help of the free source packages you could see all documentation without an effort. We keep develop this site to offer to our customer the possibility to book a value vehicle without go out from your house. Keep in touch with us to make this thing happen.
 
-First, run the development server:
+   This website needs to use JavaScript on your browser. In case, Javascript is not enabled on your own browser, following the steps below to enable and enjoy the experience to know about us and our service.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<ol>
+   <li>First, click top right corner on your browser window to show the dropdown menu, click "settings" option at the bottom of this dropdown menu.</li>
+   <li>On the left side section on "settings" window, search and click on the option call: "shields".</li>
+   <li>On "shields" section go to the bottom and disable the option which says: "block scripts".</li>
+</ol>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>
+   We use the following free packgages to make our site happen. If you are interest on anything from them just click to see more about it:
+</p>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<ul>
+   <li>
+      <a href="https://unsplash.com">Unsplash</a>
+   </li>
+   <li>
+      <a href="https://www.npmjs.com/package/react-pdf">React PDF</a>
+   </li>
+   <li>
+      <a href="https://react-icons.github.io/react-icons/">React Icons</a>
+   </li>
+   <li>
+      <a href="https://www.google.com/maps/@13.6929516,-89.2181818,15z">Google Maps</a>
+   </li>
+</ul>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p>
+   Stay tuned to know more about the new tools on our website and do not miss the opportunity to get the exact price of your vehicle.
+</p>
