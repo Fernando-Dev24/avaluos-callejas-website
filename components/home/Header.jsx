@@ -97,7 +97,7 @@ const Header = () => {
                         <a className="btn btn--eg-review">Conoce nuestro proceso de avalúo</a> 
                      </Link>
                      <Link
-                        href="/delivery">
+                        href={ whatsApp }>
                         <a className="btn btn--review">Reserva un avalúo a domicilio</a>
                      </Link>
                   </div>
@@ -106,7 +106,7 @@ const Header = () => {
 
             <section className="header__title container">
                <span>Antes de hacer algo con tu vehículo</span>
-               <h2>Debes de conocer al detalle por qué hacerlo.</h2>
+               <h2>Revisa el auto que quieras comprar.</h2>
             </section>
 
             { windowWidth > 768 &&

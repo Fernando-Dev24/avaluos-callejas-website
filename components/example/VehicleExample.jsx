@@ -17,13 +17,13 @@ const VehicleExample = () => {
                <div className="detail__container">
                   <p>
                      <strong className="detail__title">Extras: </strong>
-                     Aire acondionado, sube vidrios eléctricos, radio, CD player, conexión para auxiliar, USB, Bluetooth, sensores, alfombras individuales, asientos de tela, cámara.
+                     Aire acondionado, sube vidrios eléctricos, radio, CD player, conexión para auxiliar, USB, Bluetooth, sensores, asientos de tela, cámara.
                   </p>
                </div>
                <div className="detail__container">
                   <p>
                      <strong className="detail__title">Diagnóstico estético: </strong>
-                     Rayones, y camanances, en carrocería delantera, bumper izquierdo, desajustado, rejilla de ventilación central de tablero rota, necesita limpieza, profunda de interiores.
+                     Rayones, y camanances en carrocería delantera, bumper izquierdo desajustado, rejilla de ventilación central de tablero rota, necesita limpieza, profunda de interiores.
                   </p>
                </div>
                <div className="detail__container">

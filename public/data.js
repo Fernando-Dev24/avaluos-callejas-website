@@ -33,6 +33,7 @@ const alliedCompanies = [
    { id: uuidv4(), logo: bandesal, title: "BANDESAL" },
    { id: uuidv4(), logo: autoFacil, title: "Auto Facíl" },
    { id: uuidv4(), logo: suzuki, title: "Suzuki" },
+   { id: uuidv4(), logo: grupoQ, title: "CrediQ" },
 ];
 
 const goals = {
@@ -46,7 +47,7 @@ const goals = {
    },
    team: {
       title: 'Nuestro equipo',
-      info: 'Desde la maquinaria hasta cada uno de nuestros empleados del persona. Todos y cada uno está altamente calificado para brindar un servicio de calidad cómo y cuando sea.'
+      info: 'Desde la maquinaria hasta cada uno de nuestros empleados. Todos y cada uno está altamente calificado para brindar un servicio de calidad cómo y cuando sea.'
    }
 };
 

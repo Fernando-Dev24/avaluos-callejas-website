@@ -75,6 +75,28 @@
    }
 }
 
+@media screen and (min-width: 2560px) {
+   .home-header {
+      .navbar {
+         a {
+            font-size: 1.25rem;
+            &.btn--review {
+               padding: 1.25rem 1.875rem; /* 20px 30px */
+            }
+         }
+      }
+      .header__title {
+         span { font-size: 2.5rem; /* 40px */ }
+         h2 { font-size: 5rem; /* 80px */ }
+      }
+      .social__media {
+         a {
+            font-size: 2.1875rem; /* 35px */
+         }
+      }
+   }
+}
+
 @media screen and (max-width: 768px) {
    .home-header {
       .navbar {

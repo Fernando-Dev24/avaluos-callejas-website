@@ -11,7 +11,7 @@ const Achievements = () => {
                   <p>La Asociación Salvadoreña de distribuidores de vehículos</p>
                </div>
                <div className="achievement__card">
-                  <p>Empresa acreditada por la Superintendencia del Sistema Financiero del gobierno de El Salvador</p>
+                  <p>Empresa acreditada por la Superintendencia del Sistema Financiero</p>
                </div>
             </article>
          </section>

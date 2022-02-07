@@ -57,6 +57,12 @@ body {
    }
 }
 
+@media screen and (min-width: 1440px) {
+   body {
+      font-size: 1.125rem; /* 18px */
+   }
+}
+
 @media screen and (max-width: 500px) {
    body {
       font-size: 0.875rem; /* 14px */
