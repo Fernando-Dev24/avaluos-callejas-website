@@ -105,7 +105,7 @@ const Header = () => {
             </nav>
 
             <section className="header__title container">
-               <span>Antes de hacer algo con tu vehículo</span>
+               <span>Antes de invertir tu dinero en un vehículo usado</span>
                <h2>Revisa el auto que quieras comprar.</h2>
             </section>
 
