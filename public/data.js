@@ -11,6 +11,7 @@ import bancoPromerica from "../assets/icons/banco-promerica-logo.svg";
 import bandesal from "../assets/icons/bandesal-logo.svg";
 import autoFacil from "../assets/icons/autofacil-logo.svg";
 import suzuki from "../assets/icons/suzuki-logo.svg";
+import bancoIntegral from "../assets/icons/banco-integral.png";
 
 const links = {
   facebook:
@@ -26,12 +27,13 @@ const alliedCompanies = [
   { id: uuidv4(), logo: grupoLosTres, title: "Grupo los Tres" },
   { id: uuidv4(), logo: bfa, title: "Banco de Fomento Agropecuario" },
   { id: uuidv4(), logo: cofinoStahl, title: "Cofiño Stahl S.A" },
-  { id: uuidv4(), logo: bancoAgricola, title: "Banco Agrícola" },
+  // { id: uuidv4(), logo: bancoAgricola, title: "Banco Agrícola" },
   { id: uuidv4(), logo: bancoPromerica, title: "Banco Promerica" },
   { id: uuidv4(), logo: bandesal, title: "BANDESAL" },
   { id: uuidv4(), logo: autoFacil, title: "Auto Facíl" },
   { id: uuidv4(), logo: suzuki, title: "Suzuki" },
   { id: uuidv4(), logo: grupoQ, title: "CrediQ" },
+  { id: uuidv4(), logo: bancoIntegral, title: "Banco Integral" },
 ];
 
 const goals = {

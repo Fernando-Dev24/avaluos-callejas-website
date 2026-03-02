@@ -57,12 +57,7 @@ const About = () => {
             <article className="company" key={id}>
               <div className="company__content">
                 <div className="company__image">
-                  <Image
-                    src={logo.src}
-                    alt={title}
-                    width={logo.width}
-                    height={logo.height}
-                  />
+                  <Image src={logo.src} alt={title} width={200} height={200} />
                 </div>
                 <h3>{title}</h3>
               </div>
