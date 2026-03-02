@@ -1,41 +1,77 @@
 /* next */
-import Image from 'next/image';
+import Image from "next/image";
 /* data */
-import { alliedCompanies } from '../../public/data';
+import { alliedCompanies } from "../../public/data";
 
 const About = () => {
-   return (
-      <section className="container about__us">
-         <h3 className='title-line'>¿Quiénes somos?</h3>
-         <article className="about__us-info">
-            <p className="about">
-               <strong className='company-name'>Avalúos Callejas </strong>
-               fue fundada por emprendedores salvadoreños que como tu creemos en nuestro país. Con el paso de los años, nos hemos convertido en una opción real de servicio, en el ramo del avalúo automotriz.
-            </p>
-            <p className='about'>Ofrecemos a nuestros clientes un servicio de calidad en tarifas competitivas. Nuestro principal objetivo siempre será volvernos tu aliado al momento que pienses comprar o vender un vehiculo. Nuestro servicio básicamente consta de un avalúo completo y diagnóstico automotriz. Contamos con un fundador de más de 20 años en el ramo de evaluación de vehículos, maquinaria, y otros medios de transporte. Además, contamos con la confianza de empresas altamente conocidas en la rama automotriz, así como de importantes financieras, cooperativas, y bancos del país. Las siguiente empresas cuentan con nuestra confianza y servicios:</p>
-         </article>
+  return (
+    <section className="container about__us">
+      <h3 className="title-line">
+        ¿Quieres comprar un vehículo? <br />
+        No dejes tu inversión al azar
+      </h3>
+      <article className="about__us-info">
+        <p className="about">
+          <strong className="company-name">En Avalúos Callejas </strong>
+          nacimos del espíritu emprendedor salvadoreño con una misión clara: ser
+          tu alidado estratégico. Sabemos que comprar un vehículo es un paso
+          importante, por eso te brindamos la certeza técnica que necesitas para
+          decidir con total seguridad.
+        </p>
+        <p className="about">
+          <strong className="company-name">
+            ¿Por qué confiar en nosotros?{" "}
+          </strong>
+          <ul>
+            <li>
+              Experiencia que respalda: Bajo la dirección de nuestro socio
+              fundador, Milton Callejas, sumamos más de 25 años de trayectoria
+              en el avalúo de vehículos, maquinaria y medios de transporte.
+            </li>
+            <li>
+              Diagnóstico de precisión: Te entregamos un informe detallado sobre
+              las condiciones reales y el valor comercial justo de tu futuro
+              vehículo.
+            </li>
+            <li>
+              Respaldo oficial: Somos una empresa acreditada por la
+              Superintendencia del Sistema Financiero (SSF) y contamos con el
+              apoyo de la Asociación de Distribuidores de Vehículos de El
+              Salvador (ASALVE).
+            </li>
+          </ul>
 
-         <article className="allied-companies__grid">
-            { alliedCompanies.map(({ id, logo, title }) => {
-               return (
-                  <article className="company" key={ id }>
-                     <div className='company__content'>
-                        <div className="company__image">
-                           <Image
-                              src={ logo.src }
-                              alt={ title }
-                              width={ logo.width }
-                              height={ logo.height }
-                           />
-                        </div>
-                        <h3>{ title }</h3>
-                     </div>
-                  </article>
-               );
-            }) }
-         </article>
-      </section>
-   );
-}
- 
+          <p style={{ marginTop: "20px" }}>
+            Nuestra calidad y profesionalismo nos han convertido en la opción
+            preferida de las principales distribuidoras, cooperativas,
+            financieras y los bancos más importantes del país. Con Avalúos
+            Callejas, compras con la razón, no solo con el corazón. ¡Contáctanos
+            y asegura tu inversión!
+          </p>
+        </p>
+      </article>
+
+      <article className="allied-companies__grid">
+        {alliedCompanies.map(({ id, logo, title }) => {
+          return (
+            <article className="company" key={id}>
+              <div className="company__content">
+                <div className="company__image">
+                  <Image
+                    src={logo.src}
+                    alt={title}
+                    width={logo.width}
+                    height={logo.height}
+                  />
+                </div>
+                <h3>{title}</h3>
+              </div>
+            </article>
+          );
+        })}
+      </article>
+    </section>
+  );
+};
+
 export default About;
